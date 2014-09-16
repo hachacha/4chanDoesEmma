@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `crawl` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `title` varchar(300) DEFAULT NULL,
+ `body` varchar(999) DEFAULT NULL,
+ `exist` int(1) DEFAULT NULL,
+ `board` varchar(6) DEFAULT NULL,
+ `datetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ `url` varchar(80) DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `title` (`title`)
+) ENGINE=MyISAM AUTO_INCREMENT=2572 DEFAULT CHARSET=utf8
